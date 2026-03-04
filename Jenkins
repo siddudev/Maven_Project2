@@ -1,0 +1,16 @@
+pipeline{
+	agent any
+	stages{
+		stage("Build Package"){
+			steps{
+				bat "mvn install"
+			}
+		}
+		stage("Execute"){
+			steps{
+				bat "java -jar target/Mavenproject-v2.jar"
+			}
+		}
+	}
+}
+			
