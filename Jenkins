@@ -8,14 +8,7 @@ pipeline{
 		}
 		stage("Execute"){
 			steps{
-<<<<<<< HEAD
 				bat "java -jar target/Mavenproject-v3.jar"
-=======
-				sh '''
-					mv target/*.jar app.jar
-					java -jar app.jar
-					'''
->>>>>>> 7b98d6d8a390f3b68f9ca07df3dc4bebb729a042
 			}
 		}
 	}
